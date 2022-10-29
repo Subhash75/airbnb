@@ -68,6 +68,56 @@ function Section2() {
           title="Real Spanish Tapas & Sangria/ Vegan Ok"
           amount="2,476"
         />
+        <Card
+          img={
+            "https://a0.muscache.com/im/pictures/lombard/MtTemplate-2460171-media_library/original/342de641-c5ce-46f9-af16-fd34d1ecc2bd.jpeg?im_w=720"
+          }
+          rate1="4.92"
+          rate2="150"
+          country="USA"
+          title="Spannendes Murder Mystery Spiel"
+          amount="2,002"
+        />
+        <Card
+          img={
+            "https://a0.muscache.com/im/pictures/lombard/MtTemplate-1710354-poster/original/932fc164-dfb7-47ba-aaf7-1a66fbfbdc74.jpeg?im_w=720"
+          }
+          rate1="4.94"
+          rate2="2573"
+          country="Greece"
+          title="'True vs False' Funny Historical Game"
+          amount="1,314"
+        />
+        <Card
+          img={
+            "https://a0.muscache.com/im/pictures/lombard/MtTemplate-1675585-media_library/original/bc79f5c1-3613-477e-b82f-a91527837263.jpeg?im_w=720"
+          }
+          rate1="4.97"
+          rate2="487"
+          country="Japan"
+          title="Origami and the Essence of Japan"
+          amount="672"
+        />
+        <Card
+          img={
+            "https://a0.muscache.com/im/pictures/lombard/MtTemplate-1674509-poster/original/b0045740-aa24-4adf-af2b-c2e480806247.jpeg?im_w=720"
+          }
+          rate1="4.96"
+          rate2="579"
+          country="Italy"
+          title="Make Cannoli with a Sicilian Home Chef"
+          amount="2,052"
+        />
+        <Card
+          img={
+            "https://a0.muscache.com/im/pictures/lombard/MtTemplate-1653629-media_library/original/20066ca1-ad0a-497f-8bf4-d484135a36e5.jpeg?im_w=720"
+          }
+          rate1="4.99"
+          rate2="341"
+          country="Italy"
+          title="The Great Pasta Journey"
+          amount="2,052"
+        />
       </div>
     </div>
   );

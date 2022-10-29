@@ -149,6 +149,7 @@ div.first-section div.nav {
   display: flex;
   position: relative;
   left: 2em;
+  margin-top: 2em; /*Firefox fix*/
 }
 
 div.first-section div.nav > div {
