@@ -1,0 +1,331 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 13px;
+}
+
+div.container {
+  border: solid;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+/* ----First Block styles---- */
+div.container > div.header {
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+}
+
+div.header > p:first-child {
+  color: red;
+  font-size: 1.5em;
+  margin: 0 0.25em;
+}
+div.header > p:last-of-type {
+  color: red;
+  font-size: 1.25em;
+  font-weight: 900;
+}
+
+div.header > div.login {
+  color: gray;
+  margin-left: auto;
+  border-top: 5px solid;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  padding: 0.5em 0 0.5em 4em;
+  margin-right: 0.75em;
+  display: flex;
+  align-items: center;
+}
+
+div.header > div.login p:first-of-type,
+div.header > div.login > p:last-of-type {
+  margin-right: 1em;
+  color: black;
+}
+
+div.container > div.header > div.login > div.icons {
+  border: solid black;
+  border-radius: 25px;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+}
+div.container > div.header > div.login > div.icons p:last-of-type {
+  font-size: 1.25em;
+}
+/* --- First Block styles end --- */
+
+div.container h1.card-heading {
+  margin: 0.5em 1.25em 0.5em;
+}
+
+/* Second block styles */
+
+div.container > div.first-section {
+  margin-top: 1em;
+  overflow: hidden;
+}
+
+div.container > div > div.card-container {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none; /*prevent scrollbars along with the following code*/
+}
+
+div.container > div > div.card-container::-webkit-scrollbar {
+  width: 0;
+}
+
+div.first-section > div.card-container > div.card {
+  flex-shrink: 0;
+  border-radius: 20px;
+  width: 70%;
+  height: 350px;
+  margin-left: 2em;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Images for First Three Cards */
+
+div.first-section > div.card-container > div.card:nth-of-type(1) {
+  background-image: url("https://a0.muscache.com/im/pictures/e35bb307-05f4-48a4-bdc5-3b2198bb9451.jpg?im_w=2560");
+}
+div.first-section > div.card-container > div.card:nth-of-type(2) {
+  background-image: url("  https://a0.muscache.com/im/pictures/58819d01-2a71-441d-b3bc-baae0cd64da1.jpg?im_w=2560");
+}
+div.first-section > div.card-container > div.card:nth-of-type(3) {
+  background-image: url("https://a0.muscache.com/im/pictures/bcbd20bb-1654-4ea2-a86c-2cf25666f3b6.jpg?im_w=2560");
+  margin-right: 2em;
+}
+
+div.first-section > div.card-container > div.card > div.info {
+  color: white;
+  height: 100%;
+  padding: 1em;
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+}
+
+div.first-section > div.card-container > div.card p:first-of-type {
+  flex-shrink: 0;
+}
+
+div.first-section > div.card-container > div.card p:nth-of-type(2) {
+  flex-shrink: 0;
+  margin-top: 0.25em;
+  font-size: 1.75em;
+  width: 60%;
+}
+
+div.first-section > div.card-container > div.card p:last-of-type {
+  flex-shrink: 0;
+  color: black;
+  background-color: white;
+  font-size: 1.15em;
+  font-weight: 600;
+  padding: 0.3em 0.6em;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 1em;
+}
+
+
+/* --- Nav Bar Styles--- */
+
+div.first-section div.nav {
+  width: 95%;
+  display: flex;
+  position: relative;
+  left: 2em;
+}
+
+div.first-section div.nav > div {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+div.container > div.first-section div.nav > div::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+div.first-section div.nav > div:first-of-type {
+  display: none;  /*Hidden for mobile users*/
+}
+
+div.first-section div.nav > div > * {
+  font-size: 0.8em;
+  padding: 0.25em 0.5em;
+  width: 84px;
+  flex-shrink: 0;
+  text-align: center;
+  border: solid transparent;
+  border-radius: 20px;
+  margin: 0.5em;
+  background-color: gainsboro;
+}
+
+div.first-section div.nav > div.unvisited > p:last-of-type {
+  align-self: center;
+  display: none;  /*arrow btn of navbar*/
+  background-color: white;
+  box-shadow: -15px 0 10px white;
+  margin-right: -0.5em;
+  width: fit-content;
+  border: solid;
+  border-radius: 10px;
+  padding: 0.25em 0.5em;
+  position: absolute;
+  right: 5px;
+}
+
+/* --- second block styles end---- */
+
+/* --- third block styles */
+
+div.second-section div.card2 {
+  color: black;
+  flex-shrink: 0;
+  border-radius: 20px;
+  width: 40%;
+  height: 350px;
+  margin-left: 2em;
+  position: relative;
+}
+
+div.second-section div.card2 div.img {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+div.second-section div.card2 div.img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+div.second-section div.card2 div.img span {
+  color: white; /*Heart Symbol*/
+  font-size: 2em;
+  position: absolute;
+  top: 8%;
+  right: 10%;
+}
+
+div.second-section div.card2 > p:first-of-type {
+  margin: 0.5em 0;
+  display: flex;
+  align-items: center;
+}
+
+div.second-section div.card2 > p:first-of-type > * {
+  margin-right: 0.25em; /*sets margin for info just below image*/
+}
+
+div.second-section div.card2 > p:nth-of-type(2) {
+  font-size: 1.1em; /*Title styles*/
+  margin: 0.5em 0 2em 0;
+  width: 85%;
+}
+
+div.second-section div.card2 > p:nth-of-type(3) {
+  font-size: 1.25em;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+}
+div.second-section div.card2 > p:nth-of-type(3) span {
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+div.container > div.second-section div.card-container div.card2:last-of-type {
+  margin-right: 2em;
+}
+
+/* Mini Screens */
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 12px;
+  }
+  div.second-section div.card2 {
+    height: 375px;
+  }
+}
+
+/* Tablets */
+/* Modifies the nav bar */
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 13px;
+  }
+  div.container {
+    display: block;
+  }
+
+  div.container > div.first-section > div.card-container > div.card {
+    width: 40%;
+    height: 200px;
+  }
+  div.first-section div.nav {
+    display: flex;
+  }
+
+  div.first-section div.nav > div:first-of-type {
+    width: 20%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    border-right: solid gainsboro;
+  }
+
+  div.first-section div.nav > div:first-of-type > * {
+    width: fit-content;
+    background-color: white;
+    border: solid gainsboro;
+    margin: 0;
+  } 
+  
+
+  div.first-section div.nav > div {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  div.first-section div.nav > div.unvisited > p:last-of-type {
+    display: inline-flex;
+  }
+
+  div.second-section div.card2 {
+    width: 23%;
+    height: 375px;
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 950px) {
+  
+  div.second-section div.card2 {
+    width: 16.5%;
+    height: 360px;
+  }
+}
